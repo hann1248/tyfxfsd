@@ -1,202 +1,263 @@
-<div dir="ltr" align=center>
-    
-[**![Lang_farsi](https://user-images.githubusercontent.com/125398461/234186932-52f1fa82-52c6-417f-8b37-08fe9250a55f.png) فارسی**](README_fa.md) / [**Русский 🇷🇺**](README_ru.md) / [**简体中文 🇨🇳**](README_cn.md) / [**日本語 🇯🇵**](README_ja.md) / [**Portugês-BR 🇧🇷**](README_br.md)
+# 🎬 AI漫导 (DirectorAI)
 
-</div>
-<br>
+> AI 漫剧制作 APP，能一键生成剧本、分镜及合成视频，让你在手机上也能快速制作漫剧
 
-<p align="center"><img src="https://github.com/hiddify/hiddify.com/blob/main/docs/assets/hiddify-app-logo.svg" width=56% /></p>
-<br>
-
-<div align="center">
-
-<!--
-![Hiddify logo + text](https://github.com/hiddify/hiddify-app/assets/125398461/d821cfe0-b4c4-441f-be4e-eb9209f59542)
-    -->
-    
-[![GP-Intalls](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dapp.hiddify.com%26l%3DGoogle%2520Play%26m%3D%24shortinstalls&style=flat-square)](https://play.google.com/store/apps/details?id=app.hiddify.com) [![Downloads](https://img.shields.io/github/downloads/hiddify/hiddify-next/total?style=flat-square&logo=github)](https://github.com/hiddify/hiddify-app/releases/)[![Last Version](https://img.shields.io/github/release/hiddify/hiddify-next/all.svg?style=flat-square)](https://github.com/hiddify/hiddify-app/releases/)[![Last Release Date](https://img.shields.io/github/release-date/hiddify/hiddify-next.svg?style=flat-square)](https://github.com/hiddify/hiddify-app/releases/)[![commits](https://img.shields.io/github/commit-activity/m/hiddify/hiddify-next?style=flat-square)](https://github.com/hiddify/hiddify-app/)
-[![Youtube](https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=Youtube&style=flat-square&logo=youtube)](https://www.youtube.com/@hiddify)[![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify&color=blue)](https://telegram.dog/hiddify)[![Telegram Group](https://img.shields.io/endpoint?color=neon&label=Support%20Group&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify_board)](https://telegram.dog/hiddify_board/5)
-
-</div>
-
-
-
-
-## What is Hiddify app?
-
-<p dir="ltr" style="font-size: 16px">A multi-platform proxy client based on <a href="https://github.com/SagerNet/sing-box">Sing-box</a> universal proxy tool-chain. Hiddify offers a wide range of capabilities, like automatic node selection, TUN mode, remote profiles etc. Hiddify is ad-free and open-source. With support for a wide range of protocols, it provides a secure and private way for accessing free internet.</p>
-
-<div align=center>
-<img width=90% alt="English Demo" src="https://github.com/hiddify/hiddify-app/assets/125398461/ffe5346d-3404-470f-b5e0-4364e23743d2">
-
-</div>
-
-## 🚀 Main features
-
-✈️ Multi-platform: Android, iOS, Windows, macOS and Linux
-
-⭐ Intuitive and accessible UI
-
-🔍 Delay based node selection
-
-🟡 Wide range of protocols:
-Vless, Vmess, Reality, TUIC, Hysteria, Wireguard, SSH etc.
-
-🟡 Subscription link and configuration formats: Sing-box, V2ray, Clash, Clash meta
-
-🔄 Automatic subscription update
-
-🔎 Display profile information including remaining days and traffic usage
-
-🛡 Open source, secure and community driven
-
-🌙 Dark and light modes
-
-⚙ Compatible with all proxy management panels
-
-⭐ Appropriate configuration for Iran, China, Russia and other countries
-
-📱 Available on official stores
-
-## 🛍️ Get It On Stores
-<a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532?platform=iphone"><img height=50px src="https://github.com/user-attachments/assets/a7c62126-07ce-4f18-8197-bbb672f6d8be"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=app.hiddify.com"><img height=50px src="https://github.com/hiddify/hiddify-next/blob/main/docs/google-play-badge.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://apps.microsoft.com/detail/Hiddify/9pdfnl3qv2s5?mode=mini" target="_blank"><img height=50px src="https://github.com/hiddify/hiddify-next/assets/125398461/620750bb-4459-41b5-9f86-ba82119345b8" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-## 📥 Direct Download
-
-<div align=left>
-<table>
-    <thead align=left>
-        <tr>
-            <th>OS</th>
-            <th>Download</th>
-        </tr>
-    </thead>
-    <tbody align=left>
-        <tr>
-        <td>iOS</td>
-            <td>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-iOS.ipa"><img src="https://img.shields.io/badge/IPA-Universal-c0c0c0.svg?logo=ios"></a>
-            </td>
-        </tr>
-        <tr>
-        <td>Android</td>
-            <td>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-universal.apk"><img src="https://img.shields.io/badge/APK-Universal-044d29.svg?logo=android"></a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm64.apk"><img src="https://img.shields.io/badge/APK-ARMv8-168039.svg?logo=android"></a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-arm7.apk"><img src="https://img.shields.io/badge/APK-ARMv7-45bf55.svg?logo=android"></a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Android-x86_64.apk"><img src="https://img.shields.io/badge/APK-x64-96ed89.svg?logo=android"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>Windows</td>
-            <td>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.Msix"><img src="https://img.shields.io/badge/OfficialSetup-x64-0078d7.svg?logo=windows"></a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Setup-x64.exe"><img src="https://img.shields.io/badge/Setup-x64-2d7d9a.svg?logo=windows"></a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Windows-Portable-x64.zip"><img src="https://img.shields.io/badge/Portable-x64-67b7d1.svg?logo=windows"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>macOS</td>
-            <td>
-                <a href="https://apps.apple.com/us/app/hiddify-proxy-vpn/id6596777532"><img src="https://img.shields.io/badge/IPA-ARM-D33A54.svg?logo=apple"></a><br>
-                <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-MacOS.dmg"><img src="https://img.shields.io/badge/DMG-Universal-ea005e.svg?logo=apple"></a><br>
-                <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-MacOS-Installer.pkg"><img src="https://img.shields.io/badge/PKG-Universal-bc544b.svg?logo=apple" /></a>
-            </td>
-        </tr>
-        <tr>
-            <td>Linux</td>
-            <td>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage"><img src="https://img.shields.io/badge/AppImage-x64-f84e29.svg?logo=linux"> </a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Debian-x64.deb"><img src="https://img.shields.io/badge/DebPackage-x64-FF9966.svg?logo=debian"> </a><br>
-                <a href="https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-rpm-x64.rpm"><img src="https://img.shields.io/badge/RpmPackage-x64-F1B42F.svg?logo=redhat"> </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-
-</div>
-
-## ⚙️ Installation and tutorials
-
-**Find tutorial information on our wiki page by clicking on image below.**
-
-<div align="center">
-
-[![Tutorials on Wiki](https://github.com/hiddify/hiddify-app/assets/125398461/95bb5cf8-c143-4934-87d6-b9d4c31e035e)](https://hiddify.com/app/)
-
-
-</div>
-
-## 🌎 Translations
-
-    
-You can improve existing languages or contribute new ones either by editing the JSON files in `/assets/translations` or [![Translate with Inlang](https://img.shields.io/badge/%20-%20-3ECF8E?logo=i18next&logoColor=white)](https://fink.inlang.com/github.com/hiddify/hiddify-app) by using [Inlang online editor](https://fink.inlang.com/github.com/hiddify/hiddify-app).    
-
-
-## ✏️ Acknowledgements
-
-We would like to express our sincere appreciation to the contributors of the following projects, whose robust foundation and innovative features have significantly enhanced the success and functionality of this project.
-
-- [Sing-box](https://github.com/SagerNet/sing-box)
-- [Sing-box for Android](https://github.com/SagerNet/sing-box-for-android)
-- [Sing-box for Apple](https://github.com/SagerNet/sing-box-for-apple)
-- [Clash](https://github.com/Dreamacro/clash)
-- [Clash Meta](https://github.com/MetaCubeX/Clash.Meta)
-- [FClash](https://github.com/Fclash/Fclash)
-- [Vazirmatn Font by Saber Rastikerdar](https://github.com/rastikerdar/vazirmatn)
-- [Others](./pubspec.yaml)
-
-## 🎯 Donation and Support
-
-The easiest way to support us is to click on the star (⭐) at the top of this page.
-
-<div align=center>
-    
-<a href="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history?repo_id=643504282" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history/thumbnail.png?repo_id=643504282&image_size=auto&color_scheme=dark" width="721" height="auto">
-    <img alt="Star History of hiddify/hiddify-app" src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history/thumbnail.png?repo_id=643504282&image_size=auto&color_scheme=light" width="721" height="auto">
-  </picture>
-</a>
-
-</div>
-
-We also need financial support for our services. All of our activities are done voluntarily and financial support will be spent on the development of the project. You can view our support addresses [here](https://hiddify.com/donation-and-support/).
-
-## 👩‍🏫 Collaboration and Contact Information
-
-Hiddify is a community driven project. If you're interested in contributing, please read the [contribution guidelines](./CONTRIBUTING.md). We would specially appreciate any help we can get in these areas: **Flutter, Go, iOS development (Swift), Android development (Kotlin).**
-
-<div align=center>
-
-<br>
-
-[![Email](https://img.shields.io/badge/Email-contribute@hiddify.com-005FF9?style=flat-square&logo=mail.ru)](mailto:contribute@hiddify.com)
-[![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify&color=blue)](https://telegram.dog/hiddify)
-[![Telegram Group](https://img.shields.io/endpoint?color=neon&label=Support%20Group&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify_board)](https://telegram.dog/hiddify_board)
-[![Youtube](https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=Youtube&style=flat-square&logo=youtube)](https://www.youtube.com/@hiddify)
-[![Twitter](https://img.shields.io/twitter/follow/hiddify_com?color=%231DA1F2&logo=twitter&logoColor=1DA1F2&style=flat-square)](https://twitter.com/intent/follow?screen_name=hiddify_com)
-
-</div>
-
-<p align=center>
- We appreciate all people who are participating in this project. Some people here and many many more outside of Github. It means a lot to us. ♥
- </p>
- 
-<p align=center> 
-<a href="https://github.com/hiddify/hiddify-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hiddify/hiddify-next" />
-</a>
-</p>
-<p align=center>
- Made with <a rel="" target="_blank" href="https://contrib.rocks">Contrib.Rocks</a> 
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.0+-02569B?logo=flutter" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3.0+-0175C2?logo=dart" alt="Dart">
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?logo=android" alt="Android">
+  <img src="https://img.shields.io/badge/AI-GLM--4.7-FF6B9D" alt="GLM-4.7">
 </p>
 
+## ✨ 项目简介
+
+AI漫导是一款基于 Flutter 开发的移动应用，采用 **AI 智能体架构**，能够理解用户的文字描述，并自动编排多个 AI 模型协作，最终生成完整的AI 漫剧视频内容。
+
+只需简单描述你的创意，AI漫导就能帮你实现！
+
+```
+用户: "制作一个雪地里的冒险故事"
+     ↓
+🤖 AI 理解需求 → 🔥 生成剧本 → 🖼️ 生成分镜图片和视频 → 🎬 转换合成视频
+     ↓
+✅ 完成！
+```
+
+![](/images/d82ef8a6d34fa0bcd71636ae2e931e28.jpg)
 
 
+我总结了一下大概的流程是这样子的：
+
+![](images/AI漫剧APP-4.gif)
 
 
+其中，我比较关心的是人物一致性解决方案：
 
+![](images/20260105115408.png)
+
+在对应场景的配置默认是给了 7 个，角色是给了 2 个，然后这些我都设置成可配置的了。
+
+![](images/AI漫剧APP-5.png)
+
+能够生成角色三视图：
+
+![](images/AI漫剧APP-15.png)
+
+剧本场景：
+
+![](https://cdn.canghecode.com/blog/AI%20%E6%BC%AB%E5%89%A7APP-17.png)
+
+场景规划：
+
+![](images/AI漫剧APP-18.png)
+
+场景执行：
+
+![](images/AI漫剧APP-19.png)
+
+场景分镜规划：
+
+![](images/AI漫剧APP-19.png)
+
+
+## 🛠️ 技术架构
+
+### 核心技术栈
+
+| 技术 | 用途 |
+|------|------|
+| **Flutter 3.0+** | 跨平台 UI 框架 |
+| **Dart 3.0+** | 编程语言 |
+| **Provider** | 状态管理 |
+| **Dio** | HTTP 网络请求 |
+| **flutter_markdown** | Markdown 渲染 |
+
+### AI 模型集成
+
+| 模型 | 提供商 | 功能 |
+|------|--------|------|
+| **GLM-4.7** | 智谱 AI | 智能编排与决策 |
+| **Gemini-3-Pro-Image-Preview** | Google | 文本生成图片 |
+| **Veo3.1** | Google | 图片生成视频 |
+
+### 智能体架构
+
+项目采用 **ReAct (Reasoning + Acting)** 循环架构：
+
+```
+┌─────────────────────────────────────────────────────┐
+│                    ReAct 循环                        │
+├─────────────────────────────────────────────────────┤
+│  1. 用户输入 → GLM-4.7 理解意图                      │
+│  2. GLM 返回下一步操作 (JSON 命令)                   │
+│  3. 执行工具调用 (图片生成 / 视频生成)               │
+│  4. 将结果反馈给 GLM                                 │
+│  5. 重复直到任务完成                                 │
+└─────────────────────────────────────────────────────┘
+```
+
+## 📁 项目结构
+
+```
+lib/
+├── main.dart                 # 应用入口，主题配置
+├── controllers/
+│   └── agent_controller.dart # ReAct 智能体控制器
+├── models/
+│   ├── agent_command.dart    # 智能体命令/响应模型
+│   └── chat_message.dart     # 聊天消息模型
+├── providers/
+│   └── chat_provider.dart    # 聊天状态管理
+├── screens/
+│   └── chat_screen.dart      # 主聊天界面
+└── services/
+    └── api_service.dart      # API 服务层
+```
+
+## 🚀 快速开始
+
+### 环境要求
+
+- Flutter SDK >= 3.0.0
+- Dart SDK >= 3.0.0
+- Android Studio / VS Code
+- Android 设备或模拟器
+
+### 安装步骤
+
+1. **克隆项目**
+   ```bash
+   git clone <repository-url>
+   cd director_ai
+   ```
+
+2. **安装依赖**
+   ```bash
+   flutter pub get
+   ```
+
+3. **配置 API Token**
+   
+   在 `lib/services/api_service.dart` 中配置你的智谱 AI API Token：
+   ```dart
+   static String bearerToken = 'YOUR_API_TOKEN';
+   ```
+   
+   或在应用设置中动态配置。
+
+4. **运行应用**
+   ```bash
+   flutter run
+   ```
+
+## 📦 依赖说明
+
+```yaml
+dependencies:
+  flutter: sdk
+  cupertino_icons: ^1.0.6    # iOS 风格图标
+  dio: ^5.4.0                # HTTP 客户端
+  provider: ^6.1.1           # 状态管理
+  path_provider: ^2.1.5      # 文件路径访问
+  flutter_markdown: ^0.6.18+3 # Markdown 渲染
+  http_parser: ^4.0.2        # HTTP 解析工具
+```
+
+## 🎨 UI 特点
+
+- 🌸 **二次元粉色主题** - 可爱清新的视觉风格
+- 💬 **聊天界面** - 自然的对话交互体验
+- 🎭 **Material Design 3** - 现代化设计语言
+- 📱 **响应式布局** - 适配不同屏幕尺寸
+
+## 🔧 可用工具
+
+智能体可调用以下工具：
+
+| 工具名称 | 参数 | 功能描述 |
+|----------|------|----------|
+| `generate_image` | `prompt` | 根据文字描述生成图片 |
+| `generate_video` | `image_url`, `prompt`, `seconds` | 将图片转换为视频 |
+| `complete` | `message` | 完成任务并回复用户 |
+
+## 📝 使用示例
+
+**示例 1: 创建简单视频**
+```
+你: 做一个日落的视频
+AI: 正在生成日落图片...
+AI: 图片生成成功！
+AI: 正在将图片转换为视频...
+AI: 你的视频已准备好了！
+```
+
+**示例 2: 详细描述**
+```
+你: 制作一个樱花树下，女孩在读书的唯美视频，10秒
+AI: 正在生成唯美场景图片...
+AI: 正在创建10秒视频...
+AI: 完成！希望你喜欢这个视频！
+```
+
+## ⚙️ 配置选项
+
+### API 配置
+
+在 `ApiConfig` 类中可配置：
+
+```dart
+class ApiConfig {
+  static const String baseUrl = 'https://open.bigmodel.cn/api/paas/v4';
+  static String bearerToken = 'YOUR_TOKEN';
+}
+```
+
+### 智能体配置
+
+在 `AgentController` 中可调整：
+
+```dart
+// 最大迭代次数，防止无限循环
+static const int _maxIterations = 10;
+```
+
+## 🔒 安全提示
+
+⚠️ **重要**：不要将 API Token 提交到版本控制系统！
+
+建议：
+- 使用环境变量存储敏感信息
+- 在生产环境中使用后端代理 API 调用
+- 考虑使用 Flutter secure storage 存储 token
+
+## 🤝 贡献指南
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+## star 趋势图
+
+[![Star History Chart](https://api.star-history.com/svg?repos=freestylefly/director_ai&type=Date)](https://star-history.com/#freestylefly/director_ai&Date)
+
+## 公众号
+
+微信搜 **苍何** 或扫描下方二维码关注苍何的原创公众号，回复 **AI** 即可和 18000+ 好友一同探讨AI，一同学习 AI Coding。
+
+![苍何微信公众号](images/扫码_搜索联合传播样式-标准色版.bmp)
+
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+---
+
+<p align="center">
+  Made with ❤️ and Flutter
+</p>
 
