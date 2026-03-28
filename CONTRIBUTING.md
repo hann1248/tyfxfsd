@@ -1,122 +1,100 @@
-# Contributing
+# Contributing to public-apis
 
-Every contribution to HiddifyApp is welcome, whether it is reporting a bug, submitting a fix, proposing new features, or just asking a question. To make contributing to HiddifyApp as easy as possible, you will find more details for the development flow in this documentation. [Basic tutorial on how to contribute to HiddifyApp](https://hiddify.com/app/How-to-contribute-to-this-project/)
+> While the masses of pull requests and community involvement are appreciated, some pull requests have been specifically
+opened to market company APIs that offer paid solutions. This API list is not a marketing tool, but a tool to help the
+community build applications and use free, public APIs quickly and easily. Pull requests that are identified as marketing attempts will not be accepted.
+>
+> Please make sure the API you want to add has full, free access or at least a free tier and does not depend on the purchase of a device/service before submitting.  An example that would be rejected is an API that is used to control a smart outlet - the API is free, but you must purchase the smart device.
+>
+> Thanks for understanding! :)
 
-Please note, we have a [Code of Conduct](https://github.com/hiddify/hiddify-app/blob/main/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+## Formatting
 
-- [Feedback, Issues and Questions](#feedback-issues-and-questions)
-- [Adding new Features](#adding-new-features)
-- [Development](#development)
-  - [Working with the Go Code](#working-with-the-go-code)
-  - [Working with the Flutter Code](#working-with-the-flutter-code)
-    - [Setting up the Environment](#setting-up-the-environment)
-    - [Run Release Build on a Device](#run-release-build-on-a-device)
-- [Release](#release)
-- [Collaboration and Contact Information](#collaboration-and-contact-information)
+Current API entry format:
 
-## Feedback, Issues and Questions
+| API | Description | Auth | HTTPS | CORS | Call this API |
+| --- | --- | --- | --- | --- | --- |
+| API Title(Link to API documentation) | Description of API | Does this API require authentication? * | Does the API support HTTPS? | Does the API support [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)? * | [Does this API have a public Postman Collection?](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button/) | 
 
-If you encounter any issue, or you have an idea to improve, please:
+Example entry:
 
-- Search through [existing open and closed GitHub Issues](https://github.com/hiddify/hiddify-app/issues) for the answer first. If you find a relevant topic, please comment on the issue.
-- If none of the issues are relevant, please add a new [issue](https://github.com/hiddify/hiddify-app/issues/new/choose) following the templates and provide as much relevant information as possible.
-
-## Adding new Features
-
-When contributing a complex change to the Hiddify repository, please discuss the change you wish to make within a GitHub issue with the owners of this repository before making the change.
-
-
-## Development
-
-### Adding Feature / Fix bug in Core:
-Please follow our [Go Core Development repository](https://github.com/hiddify/hiddify-next-core/main/CONTRIBUTING.m).
-
-### Working with the Flutter Code
-Hiddify uses [Flutter](https://flutter.dev), make sure that you have the correct version installed before starting development. You can use the following commands to check your installed version:
-
-```shell
-$ flutter --version
-
-# example response
-Flutter 3.13.4 • channel stable • https://github.com/flutter/flutter.git
-Framework • revision 367f9ea16b (4 weeks ago) • 2023-09-12 23:27:53 -0500
-Engine • revision 9064459a8b
-Tools • Dart 3.1.2 • DevTools 2.25.0
+```
+| [NASA](https://api.nasa.gov) | NASA data, including imagery | No | Yes | Yes | [Run in Postman Button]
 ```
 
+\* Currently, the only accepted inputs for the `Auth` field are as follows:
 
-We recommend using [Visual Studio Code](https://docs.flutter.dev/development/tools/vs-code) extensions for development.
+* `OAuth` - _the API supports OAuth_
+* `apiKey` - _the API uses a private key string/token for authentication - try and use the correct parameter_
+* `X-Mashape-Key` - _the name of the header which may need to be sent_
+* `No` - _the API requires no authentication to run_
+* `User-Agent` - _the name of the header to be sent with requests to the API_
 
-#### Setting up the Environment
+\* Currently, the only accepted inputs for the `CORS` field are as follows:
 
-We have extensive use of code generation in the form of [freezed](https://github.com/rrousselGit/freezed), [riverpod](https://github.com/rrousselGit/riverpod), etc. So it's generate these before running the code. Execute the following make commands in order:
-Assuming you have not built the `hiddify-core` and want to use [existing releases](https://github.com/hiddify/hiddify-next-core/releases), you should run the following command (based on your target platform):
+* `Yes` - _the API supports CORS_
+* `No` - _the API does not support CORS_
+* `Unknown` - _it is unknown if the API supports CORS_
 
-
-- `make windows-prepare`
-- `make linux-prepare` 
-- `make macos-prepare`
-- `make ios-prepare`
-- `make android-prepare`
+\* For the Call this API column, add a link to a Postman collection. You may need to [create a collection](https://learning.postman.com/docs/getting-started/first-steps/creating-the-first-collection/) to create a Run in Postman Button. 
 
 
-##### build the `hiddify-core` from source (Optional)
-If you want to build the `hiddify-core` from source after `make prepare`, use:
-- `make build-windows-libs`
-- `make build-linux-libs` 
-- `make build-macos-libs`
-- `make build-ios-libs`
-- `make build-android-libs`
+_Without proper [CORS configuration](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) an API will only be usable server side._
 
-#### Run Release Build on a Device
+After you've created a branch on your fork with your changes, it's time to [make a pull request][pr-link]. 
 
-To run the release build on a device for testing, we have to get the Device ID first by running the following command:
 
-```shell
-$ flutter devices
+*Please follow the guidelines given below while making a Pull Request to the Public APIs*
 
-# example response
-3 connected devices:
+## Pull Request Guidelines
 
-2211143G (mobile) • 35492ae2 • android-arm64  • Android 13 (API 33)
-Windows (desktop) • windows  • windows-x64    • Microsoft Windows [Version 10.0.22000.2482]
-Chrome (web)      • chrome   • web-javascript • Google Chrome 117.0.5938.149
-```
+* Never put an update/new version of an API that is already listed, the old version of the API gets deprecated.
+* Continue to follow the alphabetical ordering that is in place per section.
+* Each table column should be padded with one space on either side.
+* The Description should not exceed 100 characters.
+* If an API seems to fall into multiple categories, please place the listing within the section most in line with the services offered through the API. For example, the Instagram API is listed under `Social` since it is mainly a social network, even though it could also apply to `Photography`.
+* Add one link per Pull Request.
+* Make sure the PR title is in the format of `Add Api-name API` *for e.g.*: `Add Blockchain API`
+* Use a short descriptive commit message. *for e.g.*: ❌`Update Readme.md`  ✔ `Add Blockchain API to Cryptocurrency`
+* Search previous Pull Requests or Issues before making a new one, as yours may be a duplicate.
+* Don't mention the TLD(Top Level Domain) in the name of the API. *for e.g.*: ❌Gmail.com ✔Gmail
+* Please make sure the API name does not end with `API`. *for e.g.*: ❌Gmail API ✔Gmail 
+* Please make sure the API has proper documentation.
+* Please make sure you squash all commits together before opening a pull request. If your pull request requires changes upon review, please be sure to squash all additional commits as well. [This wiki page][squash-link] outlines the squash process.
+* Target your Pull Request to the `master` branch of the `public-apis`
 
-Then we can use one of the listed devices and execute the following command to build and run the app on this device:
+Once you’ve submitted a pull request, the collaborators can review your proposed changes and decide whether or not to incorporate (pull in) your changes.
 
-```shell
-flutter run
-# or
-flutter run --device-id=35492ae2
-```
+### Pull Request Pro Tips
 
-## Release
+* [Fork][fork-link] the repository and [clone][clone-link] it locally.
+Connect your local repository to the original `upstream` repository by adding it as a [remote][remote-link].
+Pull in changes from `upstream` often so that you stay up to date and so when you submit your pull request,
+merge conflicts will be less likely. See more detailed instructions [here][syncing-link].
+* Create a [branch][branch-link] for your edits.
+* Contribute in the style of the project as outlined above. This makes it easier for the collaborators to merge
+and for others to understand and maintain in the future.
 
-We use [flutter_distributor](https://github.com/leanflutter/flutter_distributor) for packaging. [GitHub action](https://github.com/hiddify/hiddify-app/blob/main/.github/workflows/build.yml) is triggered on every release tag and will create a new GitHub release.
-After setting up the environment, use the following make commands to build the release version:
+### Open Pull Requests
 
-- `make windows-release`
-- `make linux-release`
-- `make macos-release`
-- `make android-release`
-- `make ios-release`
+Once you’ve opened a pull request, a discussion will start around your proposed changes.
 
-## Collaboration and Contact Information
+Other contributors and users may chime in, but ultimately the decision is made by the collaborators.
 
-We need your collaboration in order to develop this project. If you have experience in these areas, please do not hesitate to contact us.
+During the discussion, you may be asked to make some changes to your pull request.
 
-- Flutter Developing
-- Swift Developing
-- Go Developing
+If so, add more commits to your branch and push them – they will automatically go into the existing pull request. But don't forget to squash them.
 
-<div align=center>
-</br>
+Opening a pull request will trigger a build to check the validity of all links in the project. After the build completes, **please ensure that the build has passed**. If the build did not pass, please view the build logs and correct any errors that were found in your contribution. 
 
-[![Email](https://img.shields.io/badge/Email-contribute@hiddify.com-005FF9?style=flat-square&logo=mail.ru)](mailto:contribute@hiddify.com)
-[![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify&color=blue)](https://telegram.dog/hiddify)
-[![Telegram Group](https://img.shields.io/endpoint?color=neon&label=Support%20Group&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fhiddify_board)](https://telegram.dog/hiddify_board)
-[![Youtube](https://img.shields.io/youtube/channel/views/UCxrmeMvVryNfB4XL35lXQNg?label=Youtube&style=flat-square&logo=youtube)](https://www.youtube.com/@hiddify)
-[![Twitter](https://img.shields.io/twitter/follow/hiddify_com?color=%231DA1F2&logo=twitter&logoColor=1DA1F2&style=flat-square)](https://twitter.com/intent/follow?screen_name=hiddify_com)
+*Thanks for being a part of this project, and we look forward to hearing from you soon!*
 
-</div>
+[branch-link]: <http://guides.github.com/introduction/flow/>
+[clone-link]: <https://help.github.com/articles/cloning-a-repository/>
+[fork-link]: <http://guides.github.com/activities/forking/>
+[oauth-link]: <https://en.wikipedia.org/wiki/OAuth>
+[pr-link]: <https://help.github.com/articles/creating-a-pull-request/>
+[remote-link]: <https://help.github.com/articles/configuring-a-remote-for-a-fork/>
+[syncing-link]: <https://help.github.com/articles/syncing-a-fork>
+[squash-link]: <https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit>
+
